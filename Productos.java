@@ -14,5 +14,16 @@ public class Productos {
     public int getCantidadProducto() {
         return cantidadProducto;
     }
+    
+    public void cambiarNombreProducto(String nProducto) {
+        nombreProducto = nProducto;
+    }
 
+    public void cambiarCantidadProducto(int nCantidadProducto) {
+        cantidadProducto = nCantidadProducto;
+    }
+    
+    public void imprimirDetalles(){
+        System.out.println("Producto: "+ nombreProducto + ", Cantidad: " + cantidadProducto);
+    }
 }
