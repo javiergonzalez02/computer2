@@ -20,4 +20,22 @@ public class Fabrica {
     public Trabajador getTrabajador() {
         return trabajador;
     }
+    
+    public void cambiarNombreFabrica(String nuevoNombreFabrica){
+        nombreFabrica = nuevoNombreFabrica;
+    }
+    
+    public void cambiarCantidadProduccion(int nuevoAnoapertura){
+        anoApertura = nuevoAnoapertura;
+    }
+    
+    public void cambiarPlacaBase(Trabajador nuevoTrabajador){
+        trabajador = nuevoTrabajador;
+    }
+
+     public void imprimirDetalles(){
+        System.out.println("Fabrica: "+ nombreFabrica + ", Ano Apertura: " + anoApertura + 
+        ", Trabajador: " + trabajador.getNombreTrabajador() + " , Produccion: " + 
+        trabajador.getCantidadProduccion());
+    }
 }
